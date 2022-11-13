@@ -102,6 +102,12 @@ li {
 .bold { font-weight: bold; }
 .transition { transition: 1s all ease; }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /*for wrapper*/
 .wrapper {
   max-width: 1350px;
@@ -124,6 +130,53 @@ li {
 /*=================================
   main styling starts here
 =================================*/
+.wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+
+.press span {
+  padding: 15px 5%;
+  border: 1px solid gray;
+}
+
+.press {
+  min-width: 270px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul { list-style-type: none; }
+
+.key {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.key li { position: relative; }
+
+.key-name { 
+  min-width: 100px;
+  padding: 15px 4%;
+  border: 1px solid gray;
+  display: inline-block;
+  text-align: center;
+}
+
+.event {
+  width: 100%;
+  position: absolute;
+  top: -25px;
+  text-align: center;
+}
 
 
 
