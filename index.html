@@ -2,8 +2,8 @@
 <html lang="en"> 
   <head>
     <meta charset="utf-8">
-    <title>Client</title>
-    <meta name="description" lang="en" content="">
+    <title>JS Task3</title>
+    <meta name="description" lang="en" content="keyboard events">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" media="screen" href="assets/vendor/font-awesome/css/all.min.css" >
@@ -18,6 +18,25 @@
       <!--header section ends-->
       <!--main section start-->
       <main>
+        <div class="wrapper">
+          <ul class="key show">
+              <li>
+                  <span class="event">event.key</span>
+                  <span class="key-name">a</span>
+              </li>
+              <li>
+                  <span class="event">event.keyCode</span>
+                  <span class="key-name">65</span>
+              </li>
+              <li>
+                  <span class="event">event.code</span>
+                  <span class="key-name">KeyA</span>
+              </li>
+          </ul>
+          <div class="press">
+              <span>press any key to get the keycode</span>
+          </div>
+      </div>
       </main>
       <!--main section end-->
       <!--footer section start-->
@@ -26,5 +45,7 @@
       <!--footer section end-->
     </div>
     <!--container end-->
+
+    <script src="./JS/script.js"></script>
   </body>
 </html>
