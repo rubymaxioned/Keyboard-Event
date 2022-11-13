@@ -154,7 +154,7 @@ li {
 ul { list-style-type: none; }
 
 .key {
-  display: flex;
+  display: none;
   align-items: center;
   gap: 20px;
   justify-content: center;
@@ -178,6 +178,7 @@ ul { list-style-type: none; }
   text-align: center;
 }
 
+.show { display: flex; }
 
 
 
