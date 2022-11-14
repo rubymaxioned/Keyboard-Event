@@ -12,7 +12,7 @@ function myFunction() {
     b.classList.add('show');
 }
 
-input.addEventListener("onkeypress", function (e) {
+input.addEventListener("keypress", function (e) {
     keySpan.innerText = e.key;
     codeSpan.innerText = e.keyCode;
     keycodeSpan.innerText = e.code;
