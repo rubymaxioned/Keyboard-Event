@@ -6,7 +6,7 @@ var input = document.querySelector(".input");
 var a = document.querySelector(".press span");
 var b = document.querySelector(".key");
 
-window.addEventListener("keypress", myFunction);
+window.addEventListener("keydown", myFunction);
 function myFunction(e) {
     keySpan.innerText = e.key;
     codeSpan.innerText = e.keyCode;
@@ -15,7 +15,6 @@ function myFunction(e) {
     b.classList.add('show');
 }
 
-window.addEventListener("keydown", myFunction);
 
 
 
