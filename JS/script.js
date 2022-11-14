@@ -6,17 +6,19 @@ var input = document.querySelector(".input");
 var a = document.querySelector(".press");
 var b = document.querySelector(".key");
 
-input.addEventListener("keyup", function(e) {
+a.addEventListener("click", myFunction);
+function myFunction() {
+    a.classList.add('hide');
+    b.classList.add('show');
+}
+
+input.addEventListener("onkeypress", function (e) {
     keySpan.innerText = e.key;
     codeSpan.innerText = e.keyCode;
     keycodeSpan.innerText = e.code;
 })
 
-a.addEventListener("click",myFunction);
-function myFunction(){
-    a.classList.add('hide');
-    b.classList.add('show');
-}
+
 
 
 
