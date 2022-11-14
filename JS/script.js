@@ -8,7 +8,6 @@ var b = document.querySelector(".key");
 
 window.addEventListener("keypress", myFunction);
 function myFunction(e) {
-    console.log(e);
     keySpan.innerText = e.key;
     codeSpan.innerText = e.keyCode;
     keycodeSpan.innerText = e.code;
@@ -17,22 +16,6 @@ function myFunction(e) {
 }
 
 window.addEventListener("keydown", myFunction);
-// function myFunction(e) {
-//     console.log(e);
-//     keySpan.innerText = e.key;
-//     codeSpan.innerText = e.keyCode;
-//     keycodeSpan.innerText = e.code;
-//     console.log("inside");
-//     a.classList.add('hide');
-//     b.classList.add('show');
-// }
-
-// input.addEventListener("keypress", function (e) {
-//     console.log(e);
-//     keySpan.innerText = e.key;
-//     codeSpan.innerText = e.keyCode;
-//     keycodeSpan.innerText = e.code;
-// })
 
 
 
@@ -44,20 +27,3 @@ window.addEventListener("keydown", myFunction);
 
 
 
-
-// var a = document.querySelector(".press");
-// var b = document.querySelector(".key");
-// // console.log(b);
-// a.addEventListener("click",myFunction);
-// function myFunction(){
-//     a.classList.add('hide');
-//     b.classList.add('show');
-// }
-// var c = document.querySelectorAll('.key-name');
-// // c.addEventListener('onkeypress',pressKey);
-// // console.log(c);
-// c.forEach(function(list){
-//     list.addEventListener("keypress",function(event) {
-//         console.log(e);
-//     })
-// })
