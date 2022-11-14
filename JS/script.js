@@ -3,20 +3,36 @@ var codeSpan = document.querySelector(".e-code");
 var keycodeSpan = document.querySelector(".e-keycode");
 var input = document.querySelector(".input");
 
-var a = document.querySelector(".press");
+var a = document.querySelector(".press span");
 var b = document.querySelector(".key");
 
-a.addEventListener("click", myFunction);
-function myFunction() {
+window.addEventListener("keypress", myFunction);
+function myFunction(e) {
+    console.log(e);
+    keySpan.innerText = e.key;
+    codeSpan.innerText = e.keyCode;
+    keycodeSpan.innerText = e.code;
     a.classList.add('hide');
     b.classList.add('show');
 }
 
-input.addEventListener("keypress", function (e) {
-    keySpan.innerText = e.key;
-    codeSpan.innerText = e.keyCode;
-    keycodeSpan.innerText = e.code;
-})
+window.addEventListener("keydown", myFunction);
+// function myFunction(e) {
+//     console.log(e);
+//     keySpan.innerText = e.key;
+//     codeSpan.innerText = e.keyCode;
+//     keycodeSpan.innerText = e.code;
+//     console.log("inside");
+//     a.classList.add('hide');
+//     b.classList.add('show');
+// }
+
+// input.addEventListener("keypress", function (e) {
+//     console.log(e);
+//     keySpan.innerText = e.key;
+//     codeSpan.innerText = e.keyCode;
+//     keycodeSpan.innerText = e.code;
+// })
 
 
 
